@@ -6,3 +6,7 @@ resource "google_cloud_run_service_iam_member" "authorize" {
   role     = "roles/run.invoker"
   member   = var.members[count.index]
 }
+
+module "m1" {
+  source = "github.com/GoogleCloudPlatform/terraform-google-regional-lb-http//modules/backend?ref=v0.4.0"
+}
