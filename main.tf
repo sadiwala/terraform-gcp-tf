@@ -8,5 +8,5 @@ resource "google_cloud_run_service_iam_member" "authorize" {
 }
 
 module "m1" {
-  source = "github.com/GoogleCloudPlatform/terraform-google-regional-lb-http//modules/backend?ref=v0.4.0"
+  source = "github.com/GoogleCloudPlatform/terraform-google-regional-lb-http//modules/backend"
 }
